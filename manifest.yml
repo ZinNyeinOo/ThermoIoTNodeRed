@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ThermoIoT
+  host: ThermoIoT
+  disk_quota: 1024M
+  services:
+  - ThermoIoT-cloudantNoSQLDB
+  - ThermoIoT-iotf-service
+  - availability-monitoring-auto
+  - Weather Company Data-yv
+  - IBM Watson Machine Learning-sy
+  - Twilio-ad
